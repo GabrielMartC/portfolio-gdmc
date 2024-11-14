@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<html lang="es"></html>
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel M. | Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -11,8 +12,8 @@
     <!-- main bar -->
     <button>home</button>
 
-    <header>
-        <nav>
+    <header >
+        <nav id="principal-bar">
             <ul>
                 <li>
                     <a href="#main">Inicio</a>
@@ -35,76 +36,114 @@
     <main>
         <!-- about/contact me -->
         <section class="main" id="main">
-        <img src="" alt="">
+            <img src="./img/ProfilePic.png" alt="">
 
-        <h1>Gabriel Martinez</h1>
-        <p>Soy Gabriel, músico y estudiante de Programación, entusiasta por aprender nuevas tecnologías
-            día a dia. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables, utilizando tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para 
-            transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante aprendizaje y me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.
-        </p>
+            <aside>
+                <h1>Gabriel Martinez</h1>
+                <p>Soy Gabriel, músico y estudiante de Programación, entusiasta por aprender nuevas tecnologías
+                    día a dia. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables, utilizando tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para 
+                    transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante aprendizaje y me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.
+                </p>
+                <div id="my-contacts">
+                    <h3>Contactame</h3>
+                    <!-- agregar iconos de reded -->
+                    <!-- email //agregar opcion para copiar direccion  -->
+                    <img src="./icons/email.png" alt="" onclick="showEmail()">
+                    <div id="emailContainer" class="email-info">
+                        <span id="emailText">gabrielmsistemas@gmail.com</span>
+                        <img src="./icons/copy.png" alt="" onclick="copyEmail()">
+                        <!-- <span class="copy-button" onclick="copyEmail()">Copiar</span> -->
+                    </div>
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
+                        <img src="./icons/linkedin.png" alt="">
+                    </a>
+                    <!-- github  -->
+                     <a href="https://github.com/GabrielMartC" target="_blank">
+                        <img src="./icons/github.png" alt="">
+                     </a>
+                   
+                </div>
+            </aside>
 
+        </section>
+
+        <!-- habilidades tecnicas/skills  -->
+        <section class="skills" id="skills">
+            <h2>Habilidades</h2>
+
+            <div id="container-icon-skills">
+                <img src="./icons/c-sharp.png" alt="">
+                <p>C#</p>
+
+                <img src="" alt="">
+                <p>.NET</p>
+
+                <img src="" alt="">
+                <p>SQL Server</p>
+
+                <img src="" alt="">
+                <p>HTML</p>
+
+                <img src="" alt="">
+                <p>CSS</p>
+
+                <img src="" alt="">
+                <p>JavaScript</p>
+
+                <img src="" alt="">
+                <p>Python</p>
+            </div>
+            
         </section>
 
         <!-- proyects -->
         <section class="proyects" id="proyects">
             <h2>Proyectos</h2>
 
-            <div class="proyect">
-                <h3>App Winform</h3>
-                <p>descripcion de proyecto</p>
-                <!-- aca van iconos -->
-                <a href="link-proyecto">Repositorio</a>
+            <div class="container-proyects">
+                <div class="item-proyects">
+                    <h3>Gestor de productos</h3>
+                    <img src="./img/winforms.png" alt="">
+                    <p>Una app de escritorio para la gestion de un deposito de productos</p>
+                    <div class="container-icons-proyects">
+                        <img src="./icons/c-sharp.png" alt="">
+                        <img src="./icons/NET-Framework-Logo.png" alt="">
+                        <img src="./icons/sql-server.png" alt="">
+                    </div>
+                    <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver repositorio</a>
+                </div>
             </div>
             
-        </section>
-
-        <!-- my stack/skills  -->
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <!-- con iconos -->
-            <ul>
-                <img src="" alt="">
-                <li>C#</li>
-
-                <img src="" alt="">
-                <li>.NET</li>
-
-                <img src="" alt="">
-                <li>SQL Server</li>
-
-                <img src="" alt="">
-                <li>HTML</li>
-
-                <img src="" alt="">
-                <li>CSS</li>
-
-                <img src="" alt="">
-                <li>JavaScript</li>
-
-                <img src="" alt="">
-                <li>Python</li>
-
-            </ul>
         </section>
 
         <!-- education (college and course) -->
         <section class="education" id="education">
             <h2>Educacion</h2>
-
-            <ul>
+            <div class="container-education">
+                <div class="item-education">
+                    <img src="./icons/unahur.png" alt="">
+                    <h3>Tecnicatura Universitaria en Programacion</h3>
+                    <p>Inicio: Enero 2024 | En Curso</p>
+                </div>
+                <div class="item-education">
+                    <img src="https://maxiprograma.com/assets/imgs/logo-prueba-3.png" alt="">
+                    <h3>Curso C# Nivel 2 [.Net + SQL] - Maxi Programa</h3>
+                    <p>Inicio: Enero 2024 | Finalizado: Julio 2024</p>
+                </div>
+            </div>
+            <!-- <ul>
                 <img src="" alt="">
                 <li>Tecnicatura Universitaria en Programacion</li>
                 <p>UNAHUR - 2024</p>
-
-
-            </ul>
-
+            </ul> -->
         </section>
-
     </main>
 
+    <hr>
     <footer>
-        <span>Contactame</span>
+        <p>Desarrollado por Gabriel Martinez | 2024</p>
     </footer>
+    <script src="./scripts.js"></script>
 </body>
 </html>
