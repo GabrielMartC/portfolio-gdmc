@@ -7,9 +7,54 @@
     display: none; /* Oculto por defecto */
     margin-top: 10px;
 }
+
 .copy-button {
     cursor: pointer;
     color: blue;
     text-decoration: underline;
     margin-left: 10px;
 }
+
+main{
+    padding-top: 10px;
+}
+
+.menu-bar{
+    background-color: aqua;
+    /* padding: 10px; */
+    display: flex;
+    position: fixed;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* .items-menu-bar{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    position: fixed;
+    gap: 15px;
+} */
+
+.container-main{
+    display: inline-flex;
+}
+
+/* img{
+    max-width:100%;
+    height:auto;
+} */
+
+.icons-menu{
+    height: 40px;
+}
+
+
+  
+

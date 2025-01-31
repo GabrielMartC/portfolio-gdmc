@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="es"></html>
+<html lang="es">
+
+</html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,62 +13,61 @@
 
 <body>
     <!-- main bar -->
-    <button>home</button>
+    <!-- <button>home</button> -->
 
-    <header >
+    <header>
         <nav id="principal-bar">
-            <ul>
-                <li>
-                    <a href="#main">Inicio</a>
-                </li>
-                <li>
-                    <a href="#skills">Habilidades</a>
-                </li>
-                <li>
-                    <a href="#proyects">Proyectos</a>
-                </li>
-                <li>
-                    <a href="#education">Educacion</a>
-                </li>
-            </ul>
+            <div class="menu-bar">
+                <a href="#main">Inicio</a>
+
+                <a href="#skills">Habilidades</a>
+
+                <a href="#proyects">Proyectos</a>
+
+                <a href="#education">Educacion</a>
+            </div>
         </nav>
-        
 
     </header>
 
     <main>
         <!-- about/contact me -->
         <section class="main" id="main">
-            <img src="./img/ProfilePic.png" alt="">
+            <div class="container-main">
 
-            <aside>
-                <h1>Gabriel Martinez</h1>
-                <p>Soy Gabriel, músico y estudiante de Programación, entusiasta por aprender nuevas tecnologías
-                    día a dia. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables, utilizando tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para 
-                    transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante aprendizaje y me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.
-                </p>
-                <div id="my-contacts">
-                    <h3>Contactame</h3>
-                    <!-- agregar iconos de reded -->
-                    <!-- email //agregar opcion para copiar direccion  -->
-                    <img src="./icons/email.png" alt="" onclick="showEmail()">
-                    <div id="emailContainer" class="email-info">
-                        <span id="emailText">gabrielmsistemas@gmail.com</span>
-                        <img src="./icons/copy.png" alt="" onclick="copyEmail()">
-                        <!-- <span class="copy-button" onclick="copyEmail()">Copiar</span> -->
+                <img src="./img/ProfilePic.png" alt="" height="150px">
+
+                <aside class="info-main">
+                    <h1>Gabriel Martinez</h1>
+                    <p>Soy Gabriel, músico y estudiante de Programación, entusiasta por aprender nuevas tecnologías
+                        día a dia. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables, utilizando
+                        tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para
+                        transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante aprendizaje y
+                        me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.
+                    </p>
+                    <div id="my-contacts">
+                        <h3>Contactame</h3>
+                        <!-- agregar iconos de reded -->
+                        <!-- email //agregar opcion para copiar direccion  -->
+                        <img class="icons-menu" src="./icons/email.png" alt="" onclick="showEmail()" >
+                        <div id="emailContainer" class="email-info">
+                            <span id="emailText">gabrielmsistemas@gmail.com</span>
+                            <img src="./icons/copy.png" alt="" onclick="copyEmail()">
+                            <!-- <span class="copy-button" onclick="copyEmail()">Copiar</span> -->
+                        </div>
+                        <!-- linkedin -->
+                        <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
+                            <img class="icons-menu" src="./icons/linkedin.png" alt="">
+                        </a>
+                        <!-- github  -->
+                        <a href="https://github.com/GabrielMartC" target="_blank">
+                            <img class="icons-menu" src="./icons/github.png" alt="">
+                        </a>
+    
                     </div>
-                    <!-- linkedin -->
-                    <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
-                        <img src="./icons/linkedin.png" alt="">
-                    </a>
-                    <!-- github  -->
-                     <a href="https://github.com/GabrielMartC" target="_blank">
-                        <img src="./icons/github.png" alt="">
-                     </a>
-                   
-                </div>
-            </aside>
+                </aside>
 
+            </div>
         </section>
 
         <!-- habilidades tecnicas/skills  -->
@@ -94,11 +96,11 @@
                 <img src="" alt="">
                 <p>Python</p>
             </div>
-            
+
         </section>
 
         <!-- proyects -->
-        <section class="proyects" id="proyects">
+        <section class="proyects" id="proyects" >
             <h2>Proyectos</h2>
 
             <div class="container-proyects">
@@ -111,10 +113,11 @@
                         <img src="./icons/NET-Framework-Logo.png" alt="">
                         <img src="./icons/sql-server.png" alt="">
                     </div>
-                    <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver repositorio</a>
+                    <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver
+                        repositorio</a>
                 </div>
             </div>
-            
+
         </section>
 
         <!-- education (college and course) -->
@@ -146,4 +149,5 @@
     </footer>
     <script src="./scripts.js"></script>
 </body>
+
 </html>
