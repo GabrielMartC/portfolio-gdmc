@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 .email-info {
-    display: none; /* Oculto por defecto */
+    display: none;
+    /* Oculto por defecto */
     margin-top: 10px;
 }
 
@@ -15,21 +16,20 @@
     margin-left: 10px;
 }
 
-main{
+/* main {
     padding-top: 10px;
-}
+} */
 
-.menu-bar{
+/* .menu-bar {
     background-color: aqua;
-    /* padding: 10px; */
     display: flex;
     position: fixed;
     width: 100%;
     gap: 20px;
     justify-content: center;
-}
+} */
 
-a{
+a {
     text-decoration: none;
     padding: 10px;
 }
@@ -42,19 +42,73 @@ a{
     gap: 15px;
 } */
 
-.container-main{
-    display: inline-flex;
-}
 
 /* img{
-    max-width:100%;
+    max-width:30%;
     height:auto;
 } */
 
-.icons-menu{
+.icons-menu {
     height: 40px;
 }
 
+.icons-skills, .icons-education {
+    height: 20px;
 
-  
+}
+
+.container-main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    /* gap: 5px; */
+    grid-template-areas:
+        "menu-bar menu-bar"
+        "main main"
+        "skills skills"
+        "proyects proyects"
+        "education education"
+        "footer footer";
+    
+    /* min-height: 100vh; */
+    /* width: 100%; */
+}
+
+.menu-bar {
+    grid-area: menu-bar;
+    background-color: aquamarine;
+}
+
+.main {
+    grid-area: main;
+    background-color: blue;
+    padding: 20px;
+    display: flex;
+    /* flex-flow: row wrap; */
+}
+
+.skills {
+    grid-area: skills;
+    background-color: rgb(178, 224, 12);
+}
+
+.proyects {
+    grid-area: proyects;
+    background-color: rgb(209, 39, 186);
+}
+
+.education {
+    grid-area: education;
+    background-color: rgb(255, 0, 0);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(26, 177, 39);
+}
+
+/* .menu-bar, .main, .skills, .proyects, .education, .footer {
+    min-height: 100px; 
+} */
 
