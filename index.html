@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
-</html>
-<html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,14 +22,15 @@
             </nav>
         </header>
 
-        <main>
+        <main class="sections">
             <!-- about/contact me -->
             <section class="main" id="main">
-                <img src="./img/ProfilePic.png" alt="" height="150px">
-
+                <div class="container-profile-pic">
+                    <img class="profile-pic" src="./img/ProfilePic.png" alt="">
+                </div>
                 <aside class="info-main">
                     <h1>Gabriel Martinez</h1>
-                    <p>Soy Gabriel, músico y estudiante de Programación, entusiasta por aprender nuevas tecnologías
+                    <p>Estudiante de Programación, musico, entusiasta por aprender nuevas tecnologías
                         día a dia. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables,
                         utilizando
                         tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para
@@ -43,81 +40,96 @@
                     </p>
                     <div id="my-contacts">
                         <h3>Contactame</h3>
-                        <img class="icons-menu" src="./icons/email.png" alt="" onclick="showEmail()">
-                        <div id="emailContainer" class="email-info">
-                            <span id="emailText">gabrielmsistemas@gmail.com</span>
-                            <img class="icons-menu" src="./icons/copy.png" alt="" onclick="copyEmail()">
+                        <div class="container-icons-contacts">
+                            <div>
+                                <img class="icons-contacts" src="./icons/email.png" alt="" onclick="copyEmail()">
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
+                                    <img class="icons-contacts" src="./icons/linkedin.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/GabrielMartC" target="_blank">
+                                    <img class="icons-contacts" src="./icons/github.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
-                            <img class="icons-menu" src="./icons/linkedin.png" alt="">
-                        </a>
-                        <a href="https://github.com/GabrielMartC" target="_blank">
-                            <img class="icons-menu" src="./icons/github.png" alt="">
-                        </a>
+                    </div>
+                        
                 </aside>
             </section>
 
-        <!-- habilidades tecnicas/skills  -->
-        <section class="skills" id="skills">
-            <h2>Habilidades</h2>
-
-            <img class="icons-skills" src="./icons/c-sharp.png" alt="">
-            <p>C#</p>
-
-            <img src="" alt="">
-            <p>.NET</p>
-
-            <img src="" alt="">
-            <p>SQL Server</p>
-
-            <img src="" alt="">
-            <p>HTML</p>
-
-            <img src="" alt="">
-            <p>CSS</p>
-
-            <img src="" alt="">
-            <p>JavaScript</p>
-
-            <img src="" alt="">
-            <p>Python</p>
-        </section>
-
-        <!-- proyects -->
-        <section class="proyects" id="proyects">
-            <h2>Proyectos</h2>
-            <div class="container-proyects">
-                <div class="item-proyects">
-                    <h3>Gestor de productos</h3>
-                    <img src="./img/winforms.png" alt="" height="100px">
-                    <p>Una app de escritorio para la gestion de un deposito de productos</p>
-                    <div class="container-icons-proyects">
+            <!-- habilidades tecnicas/skills  -->
+            <section class="skills" id="skills">
+                <h2>Habilidades</h2>
+                <div class="container-icons-skills">
+                    <div class="icon1">
                         <img class="icons-skills" src="./icons/c-sharp.png" alt="">
-                        <img class="icons-skills" src="./icons/NET-Framework-Logo.png" alt="">
-                        <img class="icons-skills" src="./icons/sql-server.png" alt="">
+                        <p>C#</p>
                     </div>
-                    <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver
-                        repositorio</a>
+                    <div class="icon2">
+                        <img class="icons-skills" src="./icons/NET-Framework-Logo.png" alt="">
+                        <p>.NET</p>
+                    </div>
+                    <div class="icon3">
+                        <img class="icons-skills" src="./icons/sql-server.png" alt="">
+                        <p>SQL Server</p>
+                    </div>
+                    <div class="icon4">
+                        <img class="icons-skills" src="./icons/html.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="icon5">
+                        <img class="icons-skills" src="./icons/css.png" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="icon6">
+                        <img class="icons-skills" src="./icons/js.png" alt="">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="icon7">
+                        <img class="icons-skills" src="./icons/python.png" alt="">
+                        <p>Python</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- education (college and course) -->
-        <section class="education" id="education">
-            <h2>Educacion</h2>
-            <div class="container-education">
-                <div class="item-education">
-                    <img class="icons-education" src="./icons/unahur.png" alt="">
-                    <h3>Tecnicatura Universitaria en Programacion</h3>
-                    <p>Inicio: Enero 2024 | En Curso</p>
+            <!-- proyects -->
+            <section class="proyects" id="proyects">
+                <h2>Proyectos</h2>
+                <div class="container-proyects">
+                    <div class="item-proyects">
+                        <h3>Gestor de productos</h3>
+                        <img src="./img/winforms.png" alt="" height="100px">
+                        <p>Una app de escritorio para la gestion de un deposito de productos</p>
+                        <div class="container-icons-proyects">
+                            <img class="icons-skills" src="./icons/c-sharp.png" alt="">
+                            <img class="icons-skills" src="./icons/NET-Framework-Logo.png" alt="">
+                            <img class="icons-skills" src="./icons/sql-server.png" alt="">
+                        </div>
+                        <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver
+                            repositorio</a>
+                    </div>
                 </div>
-                <div class="item-education">
-                    <img class="icons-education" src="https://maxiprograma.com/assets/imgs/logo-prueba-3.png" alt="">
-                    <h3>Curso C# Nivel 2 [.Net + SQL] - Maxi Programa</h3>
-                    <p>Inicio: Enero 2024 | Finalizado: Julio 2024</p>
+            </section>
+
+            <!-- education (college and course) -->
+            <section class="education" id="education">
+                <h2>Educacion</h2>
+                <div class="container-education">
+                    <div class="item-education">
+                        <img class="icons-education" src="./icons/unahur.png" alt="">
+                        <h3>Tecnicatura Universitaria en Programacion</h3>
+                        <p>Inicio: Enero 2024 | En Curso</p>
+                    </div>
+                    <div class="item-education">
+                        <img class="icons-education" src="https://maxiprograma.com/assets/imgs/logo-prueba-3.png" alt="">
+                        <h3>Curso C# Nivel 2 [.Net + SQL] - Maxi Programa</h3>
+                        <p>Inicio: Enero 2024 | Finalizado: Julio 2024</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </main>
 
         <footer class="footer">

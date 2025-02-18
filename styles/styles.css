@@ -16,53 +16,95 @@
     margin-left: 10px;
 }
 
-/* main {
-    padding-top: 10px;
-} */
-
-/* .menu-bar {
-    background-color: aqua;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    gap: 20px;
-    justify-content: center;
-} */
-
 a {
     text-decoration: none;
-    padding: 10px;
 }
 
-/* .items-menu-bar{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    position: fixed;
-    gap: 15px;
-} */
+p{
+    padding-bottom: 20px;
+}
 
+h2{
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-/* img{
-    max-width:30%;
-    height:auto;
-} */
+h1, h3{
+    padding-bottom: 10px;
+}
 
-.icons-menu {
+.profile-pic{
+    width: 250px;
+    
+}
+
+.icons-contacts {
     height: 40px;
 }
 
-.icons-skills, .icons-education {
-    height: 20px;
+.icons-skills {
+    height: 100px;
+}
 
+.icons-education {
+    height: 20px;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+
+}
+
+.menu-bar {
+    grid-area: menu-bar;
+    background-color: aquamarine;
+    
+}
+
+#principal-bar{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px 0px;
+    
+}
+
+.main {
+    grid-area: main;
+    background-color: blue;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "container-profile-pic info-main"; 
+
+    height: 100vh;
+
+    align-items: center;
+
+}
+
+.container-profile-pic{
+    display: flex;
+    justify-content: right;
+    padding-right: 60px;
+}
+
+.container-icons-contacts {
+    display: flex;
+    gap: 15px;
 }
 
 .container-main {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto;
     grid-auto-columns: 1fr;
-    /* gap: 5px; */
     grid-template-areas:
         "menu-bar menu-bar"
         "main main"
@@ -70,45 +112,47 @@ a {
         "proyects proyects"
         "education education"
         "footer footer";
-    
-    /* min-height: 100vh; */
-    /* width: 100%; */
-}
-
-.menu-bar {
-    grid-area: menu-bar;
-    background-color: aquamarine;
-}
-
-.main {
-    grid-area: main;
-    background-color: blue;
-    padding: 20px;
-    display: flex;
-    /* flex-flow: row wrap; */
 }
 
 .skills {
     grid-area: skills;
     background-color: rgb(178, 224, 12);
+
+    /* align-items: center; */
+    padding-bottom: 20px;
+
 }
+
+.container-icons-skills {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
+    gap: 16px;
+
+}
+
 
 .proyects {
     grid-area: proyects;
     background-color: rgb(209, 39, 186);
+
+    height: 100vh;
 }
 
 .education {
     grid-area: education;
     background-color: rgb(255, 0, 0);
+
+    height: 100vh;
 }
 
 .footer {
     grid-area: footer;
     background-color: rgb(26, 177, 39);
 }
-
-/* .menu-bar, .main, .skills, .proyects, .education, .footer {
-    min-height: 100px; 
-} */
 
