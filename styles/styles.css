@@ -30,9 +30,10 @@ h2{
     padding-bottom: 20px;
 }
 
-h1, h3{
+h1, h3, h4{
     padding-bottom: 10px;
 }
+
 
 .profile-pic{
     width: 250px;
@@ -45,10 +46,6 @@ h1, h3{
 
 .icons-skills {
     height: 100px;
-}
-
-.icons-education {
-    height: 20px;
 }
 
 
@@ -149,7 +146,8 @@ section{
     grid-area: education;
     background-color: rgb(255, 0, 0);
 
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 20px;
 }
 
 .footer {
@@ -180,5 +178,39 @@ section{
 }
 
 .img-proyect{
-    height: 100px;
+    /* height: 100px; */
 }
+
+.container-education{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    gap: 10px;
+}
+
+.item-education{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item-education-text{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* .item-education-text p, .item-education-text h3{
+    background-color: blueviolet;
+    
+}  */
+
+.img-education {
+    height: 80px;
+}
+
+
+
