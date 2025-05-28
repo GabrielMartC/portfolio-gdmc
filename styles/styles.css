@@ -132,7 +132,7 @@ section{
             1fr
         )
     );
-    gap: 16px;
+    gap: 6px;
 
 }
 
@@ -141,7 +141,8 @@ section{
     grid-area: proyects;
     background-color: rgb(209, 39, 186);
 
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 20px;
 }
 
 .education {
@@ -156,3 +157,23 @@ section{
     background-color: rgb(26, 177, 39);
 }
 
+.container-proyects{
+    display: grid;
+    grid-template-columns: repeat(
+        3,
+        minmax(
+            150px,
+            1fr
+        )
+    );
+    gap: 6px;
+}
+
+.item-proyects{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    background-color: beige;
+}
