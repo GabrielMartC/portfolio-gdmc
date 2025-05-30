@@ -25,13 +25,17 @@ p{
 }
 
 h2{
-    text-align: left;
+    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-h1, h3, h4{
+h1, h3{
     padding-bottom: 10px;
+}
+
+h4{
+    padding-top: 10px;
 }
 
 
@@ -46,6 +50,7 @@ h1, h3, h4{
 
 .icons-skills {
     height: 100px;
+    padding-bottom: 8px;
 }
 
 .icons-footer{
@@ -96,6 +101,10 @@ section{
     padding-right: 60px;
 }
 
+.info-main p{
+    text-align: left;
+}
+
 .container-icons-contacts {
     display: flex;
     gap: 15px;
@@ -124,10 +133,10 @@ section{
 
 }
 
-.skills h2, .proyects h2, .education h2{
+/* .skills h2, .proyects h2, .education h2{
     text-align: center;
 
-}
+} */
 
 .container-icons-skills {
     display: grid;
@@ -139,6 +148,7 @@ section{
         )
     );
     gap: 6px;
+    justify-items: center;
 
 }
 
@@ -169,7 +179,7 @@ section{
             1fr
         )
     );
-    gap: 6px;
+    gap: 40px;
 }
 
 .item-proyects{
@@ -184,7 +194,13 @@ section{
 
 .img-proyect{
     /* height: 100px; */
+    padding-bottom: 15px;
 }
+
+.item-proyects h3, p, a{
+    text-align: center;
+}
+
 
 .container-education{
     display: flex;
@@ -193,7 +209,7 @@ section{
     /* align-items: flex-start; */
     flex-wrap: nowrap;
 
-    gap: 10px;
+    gap: 20px;
 }
 
 .item-education{
@@ -204,9 +220,10 @@ section{
 
 .item-education-text{
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
+    width: 500px;
     justify-content: flex-end;
+    align-items: flex-start;
 }
 
 /* .item-education-text p, .item-education-text h3{
