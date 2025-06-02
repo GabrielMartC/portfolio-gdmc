@@ -29,7 +29,7 @@ h4{
 section{
     display: flex;
     flex-direction: column;
-    padding: 0px 30px;
+    padding: 40px 30px 20px;
 
 }
 
@@ -54,7 +54,10 @@ section{
 .menu-bar {
     grid-area: menu-bar;
     background-color: aquamarine;
-    
+    position: fixed;
+    justify-self: center;
+    z-index: 100;
+    height: 40px;
 }
 
 #principal-bar{
@@ -119,7 +122,6 @@ section{
 .skills {
     grid-area: skills;
     background-color: rgb(178, 224, 12);
-    padding-bottom: 20px;
 
 }
 
@@ -147,7 +149,6 @@ section{
 .proyects {
     grid-area: proyects;
     background-color: rgb(209, 39, 186);
-    padding-bottom: 20px;
 }
 
 .container-proyects{
@@ -182,7 +183,6 @@ section{
 .education {
     grid-area: education;
     background-color: rgb(255, 0, 0);
-    padding-bottom: 20px;
 }
 
 .container-education{
