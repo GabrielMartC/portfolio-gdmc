@@ -49,6 +49,33 @@ section{
         "footer footer";
 }
 
+/* fonts */
+/* for titles */
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* for normal text */
+/* <uniquifier>: Use a unique and descriptive class name */
+.lexend-font {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* <weight>: Use a value from 200 to 1000
+<uniquifier>: Use a unique and descriptive class name */
+.nunito-font> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /* section: navbar */
 .menu-bar {
@@ -239,5 +266,14 @@ section{
     height: 25px;
 }
 
+/* media querys */
+/* movile */
+@media (max-width: 480px) {
 
+}
+  
+  /* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
 
