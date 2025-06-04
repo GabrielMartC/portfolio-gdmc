@@ -2,216 +2,147 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel M. | Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-
+    <!-- Fuentes unificadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@300&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?
+        family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&
+        family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&
+        family=Lexend:wght@300&
+        family=Nunito:ital,wght@0,200..1000;1,200..1000&
+        display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
-
 <body>
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="navbar">
+    <!-- <div class="logo">Gabriel M.</div>  si quieres un logo -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#main">Inicio</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#education">Educación</a></li>
+    </ul>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
     <div class="container-main">
-        <!-- main bar -->
-        <!-- <header class="menu-bar">
-            <nav id="principal-bar">
-                <a href="#main">Inicio</a>
 
-                <a href="#skills">Habilidades</a>
-
-                <a href="#proyects">Proyectos</a>
-
-                <a href="#education">Educacion</a>
-            </nav>
-        </header> -->
-        <header class="menu-bar">
-            <nav id="principal-bar">
-                <!-- <div class="logo">MiSitio</div> -->
-        
-                <button class="menu-toggle" id="menu-toggle">☰</button>
-            
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#main">Inicio</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#proyects">Proyectos</a></li>
-                    <li><a href="#education">Educacion</a></li>
-                </ul>
-                <!-- <a href="#main">Inicio</a>
-                <a href="#skills">Habilidades</a>
-                <a href="#proyects">Proyectos</a>
-                <a href="#education">Educacion</a> -->
-                
-            </nav>
-        </header>
-
-        <main class="sections">
-            <!-- about/contact me -->
-            <section class="main" id="main">
+        <main>
+            <!-- ABOUT / CONTACT -->
+            <section class="main-section" id="main">
                 <div class="container-profile-pic">
-                    <img class="profile-pic" src="./img/ProfilePic.png" alt="">
+                    <img class="profile-pic" src="./img/ProfilePic.png" alt="Foto de Gabriel Martinez">
                 </div>
                 <aside class="info-main">
                     <h1>Gabriel Martinez</h1>
-                    <p>Estudiante de Programación, musico, entusiasta por aprender nuevas tecnologías
-                        día a dia. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables,
-                        utilizando
-                        tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para
-                        transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante
-                        aprendizaje y
-                        me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.
-                    </p>
+                    <p>Estudiante de Programación, músico, entusiasta por aprender nuevas tecnologías día a día. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables, utilizando tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante aprendizaje y me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.</p>
                     <div id="my-contacts">
-                        <h3>Contactame</h3>
+                    <h3>Contáctame</h3>
                         <div class="container-icons-contacts">
-                            <div>
-                                <img class="icons-contacts" src="./icons/email.png" alt="" onclick="copyEmail()">
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
-                                    <img class="icons-contacts" src="./icons/linkedin.png" alt="">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://github.com/GabrielMartC" target="_blank">
-                                    <img class="icons-contacts" src="./icons/github.png" alt="">
-                                </a>
-                            </div>
+                            <img class="icons-contacts" src="./icons/email.png" alt="Email" onclick="copyEmail()">
+                            <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
+                                <img class="icons-contacts" src="./icons/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/GabrielMartC" target="_blank">
+                                <img class="icons-contacts" src="./icons/github.png" alt="GitHub">
+                            </a>
                         </div>
                     </div>
-                        
                 </aside>
             </section>
 
-            <!-- habilidades tecnicas/skills  -->
-            <section class="skills" id="skills">
+            <!-- HABILIDADES -->
+            <section class="skills-section" id="skills">
                 <h2>Habilidades</h2>
                 <div class="container-icons-skills">
-                    <div class="icon1">
-                        <img class="icons-skills" src="./icons/c-sharp.png" alt="">
+                    <div class="skill-item">
+                        <img class="icons-skills" src="./icons/c-sharp.png" alt="C#">
                         <p>C#</p>
                     </div>
-                    <div class="icon2">
-                        <img class="icons-skills" src="./icons/NET-Framework-Logo.png" alt="">
+                    <div class="skill-item">
+                        <img class="icons-skills" src="./icons/NET-Framework-Logo.png" alt=".NET">
                         <p>.NET</p>
                     </div>
-                    <div class="icon3">
-                        <img class="icons-skills" src="./icons/sql-server.png" alt="">
+                    <div class="skill-item">
+                        <img class="icons-skills" src="./icons/sql-server.png" alt="SQL">
                         <p>SQL</p>
                     </div>
-                    <div class="icon4">
-                        <img class="icons-skills" src="./icons/html.png" alt="">
+                    <div class="skill-item">
+                        <img class="icons-skills" src="./icons/html.png" alt="HTML">
                         <p>HTML</p>
                     </div>
-                    <div class="icon5">
-                        <img class="icons-skills" src="./icons/css.png" alt="">
+                    <div class="skill-item">
+                        <img class="icons-skills" src="./icons/css.png" alt="CSS">
                         <p>CSS</p>
                     </div>
-                    <div class="icon6">
-                        <img class="icons-skills" src="./icons/js.png" alt="">
+                    <div class="skill-item">
+                        <img class="icons-skills" src="./icons/js.png" alt="JavaScript">
                         <p>JavaScript</p>
                     </div>
-                    <div class="icon7">
-                        <img class="icons-skills" src="./icons/python.png" alt="">
+                    <div class="skill-item">
+                        <img class="icons-skills" src="./icons/python.png" alt="Python">
                         <p>Python</p>
                     </div>
                 </div>
             </section>
 
-            <!-- proyects -->
-            <section class="proyects" id="proyects">
+            <!-- PROYECTOS -->
+            <section class="proyects-section" id="proyects">
                 <h2>Proyectos</h2>
                 <div class="container-proyects">
                     <div class="item-proyects">
-                        <img class="img-proyect" src="./img/winforms.png" alt="">
+                        <img class="img-proyect" src="./img/winforms.png" alt="Gestor de productos">
                         <h3>Gestor de productos</h3>
-                        <p>Una app de escritorio para la gestion de un deposito de productos</p>
-                        <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver
-                            repositorio</a>
+                        <p>Una app de escritorio para la gestión de un depósito de productos.</p>
+                        <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos" target="_blank">Ver repositorio</a>
                     </div>
-
-                    <div class="item-proyects">
-                        <img class="img-proyect" src="./img/winforms.png" alt="">
-                        <h3>Gestor de productos</h3>
-                        <p>Una app de escritorio para la gestion de un deposito de productos</p>
-
-                        <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver
-                            repositorio</a>
-                    </div>
-
-                    <div class="item-proyects">
-                        <img class="img-proyect" src="./img/winforms.png" alt="">
-                        <h3>Gestor de productos</h3>
-                        <p>Una app de escritorio para la gestion de un deposito de productos</p>
-      
-                        <a href="https://github.com/GabrielMartC/ProyectoFinalLV2_WinForm_GestorArticulos">Ver
-                            repositorio</a>
-                        </div>
-
+                    <!-- Puedes duplicar “item-proyects” para más proyectos -->
                 </div>
             </section>
 
-            <!-- education (college and course) -->
-            <section class="education" id="education">
-                <h2>Educacion</h2>
+            <!-- EDUCACIÓN -->
+            <section class="education-section" id="education">
+                <h2>Educación</h2>
                 <div class="container-education">
                     <div class="item-education">
-                        <img class="img-education" src="./icons/unahur_b_n.png" alt="">
+                        <img class="img-education" src="./icons/unahur_b_n.png" alt="Unahur">
                         <div class="item-education-text">
-                            <h3>Tecnicatura Universitaria en Programacion</h3>
-                            <p>Inicio: Enero 2024 | En Curso</p>
+                            <h3>Tecnicatura Universitaria en Programación</h3>
+                            <p>Inicio: Enero 2024 | En curso</p>
                         </div>
                     </div>
-                    
-
                     <h4>Cursos</h4>
-
                     <div class="item-education">
-                        <img class="img-education" src="./icons/mp.png" alt="">
+                        <img class="img-education" src="./icons/mp.png" alt="Maxi Programa">
                         <div class="item-education-text">
                             <h3>Curso C# Nivel 2 [.Net + SQL] - Maxi Programa</h3>
                             <p>Inicio: Enero 2024 | Finalizado: Julio 2024</p>
                         </div>
                     </div>
-
-                    <div class="item-education">
-                        <img class="img-education" src="./icons/mp.png" alt="">
-                        <div class="item-education-text">
-                            <h3>Curso C# Nivel 2 [.Net + SQL] - Maxi Programa</h3>
-                            <p>Inicio: Enero 2024 | Finalizado: Julio 2024</p>
-                        </div>
-                    </div>
-
-                    <div class="item-education">
-                        <img class="img-education" src="./icons/mp.png" alt="">
-                        <div class="item-education-text">
-                            <h3>Curso C# Nivel 2 [.Net + SQL] - Maxi Programa</h3>
-                            <p>Inicio: Enero 2024 | Finalizado: Julio 2024</p>
-                        </div>
-                    </div>
-
+                    <!-- Agrega más cursos si los tienes -->
                 </div>
             </section>
         </main>
 
+        <!-- FOOTER -->
         <footer class="footer">
             <p>Gabriel Martinez | 2025</p>
             <div class="container-icons-footer">
-                <div>
-                    <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
-                        <img class="icons-footer" src="./icons/linkedin.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://github.com/GabrielMartC" target="_blank">
-                        <img class="icons-footer" src="./icons/github.png" alt="">
-                    </a>
-                </div>
+                <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
+                    <img class="icons-footer" src="./icons/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/GabrielMartC" target="_blank">
+                    <img class="icons-footer" src="./icons/github.png" alt="GitHub">
+                </a>
             </div>
         </footer>
+
     </div>
+
     <script src="./scripts.js"></script>
 </body>
-
 </html>
