@@ -119,8 +119,9 @@ header.navbar .nav-links li a:hover {
 }
 
 .profile-pic {
-    max-width: 80%;
-    height: auto;
+    /* max-width: 80%; */
+    width: 180px;
+    /* height: auto; */
     border-radius: 50%;
 }
 
@@ -247,6 +248,9 @@ header.navbar .nav-links li a:hover {
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-proyect {
@@ -303,6 +307,7 @@ header.navbar .nav-links li a:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 }
 
 .item-education {
@@ -314,12 +319,12 @@ header.navbar .nav-links li a:hover {
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
 }
 
 .item-education .img-education {
     width: 80px;
     height: auto;
-    margin-bottom: 1rem;
 }
 
 .item-education-text h3 {
