@@ -4,27 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel M. | Portfolio</title>
-    <!-- Fuentes unificadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?
-        family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&
-        family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&
-        family=Lexend:wght@300&
-        family=Nunito:ital,wght@0,200..1000;1,200..1000&
-        display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER / NAVEGACIÓN -->
     <header class="navbar">
-    <!-- <div class="logo">Gabriel M.</div>  si quieres un logo -->
     <button class="menu-toggle" id="menu-toggle">☰</button>
     <ul class="nav-links" id="nav-links">
-        <li><a href="#main">Inicio</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#proyects">Proyectos</a></li>
-        <li><a href="#education">Educación</a></li>
+        <li><a href="#main">INICIO</a></li>
+        <li><a href="#skills">TECNOLOGIAS</a></li>
+        <li><a href="#proyects">PROYECTOS</a></li>
+        <li><a href="#education">FORMACION</a></li>
     </ul>
     </header>
 
@@ -38,17 +31,19 @@
                     <img class="profile-pic" src="./img/ProfilePic.png" alt="Foto de Gabriel Martinez">
                 </div>
                 <aside class="info-main">
-                    <h1>Gabriel Martinez</h1>
-                    <p>Estudiante de Programación, músico, entusiasta por aprender nuevas tecnologías día a día. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables, utilizando tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante aprendizaje y me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.</p>
+                    <div class="container-about-text">
+                        <h1>GABRIEL MARTINEZ</h1>
+                        <p>Estudiante de Programación, músico, entusiasta por aprender nuevas tecnologías día a día. Mi enfoque se centra en el desarrollo de aplicaciones eficientes y escalables, utilizando tecnologías como C#, .NET y SQL. Me interesa trabajar en equipos para transformar problemas complejos en soluciones sólidas y efectivas. Estoy en constante aprendizaje y me entusiasma seguir explorando nuevas áreas, como el desarrollo Backend.</p>
+                    </div>
                     <div id="my-contacts">
-                    <h3>Contáctame</h3>
+                        <h3>Contáctame</h3>
                         <div class="container-icons-contacts">
-                            <img class="icons-contacts" src="./icons/email.png" alt="Email" onclick="copyEmail()">
+                            <img class="icons-contacts" src="./icons/email_w.png" alt="Email" onclick="copyEmail()">
                             <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
-                                <img class="icons-contacts" src="./icons/linkedin.png" alt="LinkedIn">
+                                <img class="icons-contacts" src="./icons/linkedin_w.png" alt="LinkedIn">
                             </a>
                             <a href="https://github.com/GabrielMartC" target="_blank">
-                                <img class="icons-contacts" src="./icons/github.png" alt="GitHub">
+                                <img class="icons-contacts" src="./icons/github_w.png" alt="GitHub">
                             </a>
                         </div>
                     </div>
@@ -57,7 +52,7 @@
 
             <!-- HABILIDADES -->
             <section class="skills-section" id="skills">
-                <h2>Habilidades</h2>
+                <h2>TECNOLOGIAS</h2>
                 <div class="container-icons-skills">
                     <div class="skill-item">
                         <img class="icons-skills" src="./icons/c-sharp.png" alt="C#">
@@ -72,7 +67,7 @@
                         <p>SQL</p>
                     </div>
                     <div class="skill-item">
-                        <img class="icons-skills" src="./icons/html.png" alt="HTML">
+                        <img class="icons-skills" src="./icons/html_2.png" alt="HTML">
                         <p>HTML</p>
                     </div>
                     <div class="skill-item">
@@ -92,7 +87,7 @@
 
             <!-- PROYECTOS -->
             <section class="proyects-section" id="proyects">
-                <h2>Proyectos</h2>
+                <h2>PROYECTOS</h2>
                 <div class="container-proyects">
                     <div class="item-proyects">
                         <img class="img-proyect" src="./img/winforms.png" alt="Gestor de productos">
@@ -117,7 +112,7 @@
 
             <!-- EDUCACIÓN -->
             <section class="education-section" id="education">
-                <h2>Educación</h2>
+                <h2>FORMACION</h2>
                 <div class="container-education">
                     <div class="item-education">
                         <img class="img-education" src="./icons/unahur_b_n.png" alt="Unahur">
@@ -150,10 +145,10 @@
             <p>Gabriel Martinez | 2025</p>
             <div class="container-icons-footer">
                 <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
-                    <img class="icons-footer" src="./icons/linkedin.png" alt="LinkedIn">
+                    <img class="icons-footer" src="./icons/linkedin_w.png" alt="LinkedIn">
                 </a>
                 <a href="https://github.com/GabrielMartC" target="_blank">
-                    <img class="icons-footer" src="./icons/github.png" alt="GitHub">
+                    <img class="icons-footer" src="./icons/github_w.png" alt="GitHub">
                 </a>
             </div>
         </footer>
