@@ -7,6 +7,10 @@ Reset y globales
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
 /* google fonts */
 .inter-g-font {
     font-family: "Inter", sans-serif;
@@ -90,6 +94,20 @@ header.navbar .nav-links li a:hover {
     color: #ddd;
 }
 
+#cv-button{
+    display: block;
+    width: 6rem;
+    height: 2rem;
+    font-family: 'Montserrat';
+    background-color: rgb(20 20 20);
+    border-style: solid;
+    border-color: #ff751a;
+    color: #ffffff;
+    border-width: thin;
+    border-radius: 0.9rem;
+    font-size: 0.8rem;
+}
+
 /* Mostrar menú hamburguesa en móvil y ocultar enlaces */
 @media (max-width: 768px) {
     header.navbar .menu-toggle {
@@ -133,6 +151,7 @@ header.navbar .nav-links li a:hover {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+
 }
 
 .container-profile-pic {
@@ -182,7 +201,7 @@ header.navbar .nav-links li a:hover {
 
 .container-icons-contacts {
     display: inline-flex;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
 .icons-contacts {
@@ -323,8 +342,38 @@ header.navbar .nav-links li a:hover {
 }
 
 .item-proyects p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
+
+.item-technologies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+    column-gap: 0.4rem;
+    row-gap: 0.3rem;
+    align-items: center;
+}
+
+.item-technologies span{
+
+}
+
+.technology{
+    font-family: 'Montserrat';
+    border-style: solid;
+    border-color: #ff751a;
+    color: #ffffff;
+    border-width: thin;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+}
+
+#markBadg-sqlServ{
+    border-radius: 1rem;
+}
+
 
 .link-repository{
     display: inline-block;
@@ -388,7 +437,6 @@ header.navbar .nav-links li a:hover {
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    gap: 1rem;
     width: 100%;
 }
 
