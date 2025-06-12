@@ -327,8 +327,10 @@ header.navbar .nav-links li a:hover {
 
 .item-proyects {
     background-color: rgb(37 37 37);
-    padding: 1rem;
-    border-radius: 0.5rem;
+    /* padding: 1rem; */
+    padding-bottom: 1rem;
+    /* border-radius: 0.5rem; */
+    border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -339,8 +341,8 @@ header.navbar .nav-links li a:hover {
 .img-proyect {
     width: 100%;
     height: auto;
-    /* modificar height para ocupar todo el <a> */
-
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     transition: filter 0.3s ease;
 }
 
@@ -364,6 +366,8 @@ header.navbar .nav-links li a:hover {
 
 .item-proyects p {
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .item-technologies{
@@ -374,10 +378,13 @@ header.navbar .nav-links li a:hover {
     column-gap: 0.4rem;
     row-gap: 0.3rem;
     align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .markdownsBadges{
-    height: 1.3vw;
+    /* height: 1.3vw; */
+    height: 1.4rem;
 }
 
 #markBadg-sqlServ{
@@ -633,5 +640,21 @@ header.navbar .nav-links li a:hover {
     .item-education .img-education {
         width: 4.5vw;
         margin-right: 2vw;
+    }
+
+    .markdownsBadges{
+        height: 1.3vw;
+    }
+
+    .item-proyects {
+        padding-bottom: 1vw;
+        border-radius: 2vw;
+        gap: 2vw;
+    }
+
+    .item-proyects p{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 0rem;
     }
 }
