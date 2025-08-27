@@ -118,6 +118,7 @@ header.navbar .nav-links li a:hover {
     font-size: 0.8rem;
 }
 
+
 /* Mostrar menú hamburguesa en móvil y ocultar enlaces */
 @media (max-width: 768px) {
     header.navbar .menu-toggle {
@@ -418,7 +419,9 @@ header.navbar .nav-links li a:hover {
     height: 1.4rem;
 }
 
-#markBadg-sqlServ{
+.my-markBadg{
+    height: 1.4rem;
+
     border-radius: 1rem;
 }
 
@@ -590,11 +593,11 @@ header.navbar .nav-links li a:hover {
 }
 
 /* desktop */
-/* @media (min-width: 1024px) {
-    #university{
-        width: 50%;
+@media (min-width: 1024px) {
+    .container-courses{
+        grid-template-columns: repeat(3, 1fr);
     }
-} */
+}
 
 
 
@@ -625,6 +628,10 @@ header.navbar .nav-links li a:hover {
 
 /* pantallas mayor a 1366px x 768px */
 @media only screen and (min-width: 1367px){
+    .skills-section, .proyects-section, .education-section{
+        padding-top: 5.5rem;
+    }
+
     header.navbar {
         height: 4.5vw;
     }
@@ -644,8 +651,14 @@ header.navbar .nav-links li a:hover {
     }
     
     h2{
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
+
+    .proyect-title{
+        font-size: 1.6vw;
+
+    }
+
     
     h3, .item-education-text h3{
         font-size: 1.4vw;
@@ -677,13 +690,8 @@ header.navbar .nav-links li a:hover {
         font-size: 1.2vw;
     }
 
-    .skills-section,  .proyects-section {
-        padding: 6vw 1.5rem 3vw;
-    }
 
-    .education-section{
-        padding: 6vw 1.5rem 6vw;
-    }
+
 
     .icons-contacts {
         width: 2.5vw;
@@ -728,12 +736,21 @@ header.navbar .nav-links li a:hover {
     .item-proyects {
         padding-bottom: 1vw;
         border-radius: 2vw;
-        gap: 2vw;
     }
 
     .item-proyects p{
         margin-left: 2vw;
         margin-right: 2vw;
-        margin-bottom: 0rem;
+        margin-bottom: 2vw;
     }
+
+    .course-item-title{
+        font-size: 1.2vw;
+    }
+
+    .item-container-courses h5{
+        font-size: 0.8vw;
+    }
+
+
 }

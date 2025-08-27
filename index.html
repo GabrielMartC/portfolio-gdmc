@@ -30,7 +30,7 @@
         <main>
             <section class="main-section" id="main">
                 <div class="container-profile-pic">
-                    <img class="profile-pic" src="./img/ProfilePic.png" alt="foto perfil">
+                    <img class="profile-pic" src="./img/ProfilePic_color.png" alt="foto perfil">
                 </div>
                 <aside class="info-main">
                     <div class="container-about-text">
@@ -45,12 +45,12 @@
                     <div id="my-contacts">
                         <h3>Contáctame</h3>
                         <div class="container-icons-contacts">
-                            <img class="icons-contacts" src="./icons/email_w.png" alt="Email" onclick="copyEmail()">
+                            <img id="email-icon" class="icons-contacts" src="./icons/email_w.png" alt="Email" onclick="copyEmail()">
                             <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
-                                <img class="icons-contacts" src="./icons/linkedin_w.png" alt="LinkedIn">
+                                <img id="linkedin-icon" class="icons-contacts" src="./icons/linkedin_w.png" alt="LinkedIn">
                             </a>
                             <a href="https://github.com/GabrielMartC" target="_blank">
-                                <img class="icons-contacts" src="./icons/github_w.png" alt="GitHub">
+                                <img id="github-icon" class="icons-contacts" src="./icons/github_w.png" alt="GitHub">
                             </a>
                         </div>
                     </div>
@@ -64,10 +64,10 @@
                     <div class="skill-item">
                         <h3>Lenguajes</h3>
                         <div class="item-technologies">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSharp/csharp2.svg">
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java2.svg" title=".net framework 4.8">
 
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg" title=".net framework 4.8">
+                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg" title="phyton">
+                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSharp/csharp2.svg">
 
                         </div>
                     </div>
@@ -75,7 +75,9 @@
                     <div class="skill-item">
                         <h3>Frameworks y Librerias</h3>
                         <div class="item-technologies">
-                            <img class="markdownsBadges" src="./icons/net-framework.png" title=".net framework">
+
+                            <img class="my-markBadg" src="https://img.shields.io/badge/SPRING%20BOOT-sb?style=for-the-badge&logo=springboot&logoColor=gray&labelColor=9FD17E&color=9FD17E" title="spring">
+
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Bootstrap/bootstrap3.svg" title="bootstrap">
 
                             
@@ -85,8 +87,8 @@
                     <div class="skill-item">
                         <h3>Bases de Datos</h3>
                         <div class="item-technologies">
-                            <img class="markdownsBadges" id="markBadg-sqlServ" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white">
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/MySQL/mysql2.svg" title="mysql">
+                            <img class="my-markBadg" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white">
 
                         </div>
                     </div>
@@ -105,14 +107,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="skill-item">
-                        <h3>Estoy Aprendiendo</h3>
-                        <div class="item-technologies">
-                            <img class="markdownsBadges" src="https://img.shields.io/badge/ASP.NET-NET?style=for-the-badge&logo=dotnet&labelColor=07a0e4&color=07a0e4" title="mysql">
-                            <img class="markdownsBadges" src="https://img.shields.io/badge/patrones%20de%20dise%C3%B1o-p?style=for-the-badge&labelColor=ffa0a0&color=ffa0a0" title="mysql">
-                            
-                        </div>
-                    </div> -->
 
                     
                 </div>
@@ -126,15 +120,16 @@
                             <img class="img-proyect" src="./img/winforms.png" alt="Gestor de productos">
                             <span class="text-repository">VER REPOSITORIO</span>
                         </a>
-                        <h3>Gestor de productos</h3>
-                        <p>Aplicacion de escritorio Winforms para la gestión general de un depósito de productos (ver, agregar, modificar, eliminar). 
-                            Dichos productos son almacenados en una base de datos relacional SQL.
+                        <h3 class="proyect-title">Gestor de productos</h3>
+                        <p>Aplicacion de escritorio Winforms para la gestión general de productos 
+                            (ver, agregar, modificar, eliminar) de un comercio, 
+                            almacenados en una base de datos relacional SQL. Desarrollado con arquitectura en capas y posee validaciones.
                         </p>
                         <div class="item-technologies">
                             <span>Tecnologias: </span>
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSharp/csharp2.svg">
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/dotNET/dotnet2.svg" title=".net framework 4.8">
-                            <img class="markdownsBadges" id="markBadg-sqlServ" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white">
+                            <img class="my-markBadg" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white">
 
                         </div>
                     </div>
@@ -144,28 +139,22 @@
                             <img id="img-proyect-book" class="img-proyect" src="./img/libro-int-wc.png" alt="libro interactivo">
                             <span class="text-repository">VER REPOSITORIO</span>
                         </a>
-                        <h3 id="proyect-book">Libro Interactivo</h3>
-                        <p>Desarrollo de una aplicación web interactiva inspirada en los clásicos 
-                            “Elige tu propia aventura”. El proyecto incluye un sistema de inicio de 
-                            sesión con vista de administración, donde se gestionan capítulos de la
-                             historia, y una interfaz pública que permite al usuario tomar decisiones 
-                             y explorar distintos finales posibles. El sitio es completamente responsive,
-                              combina HTML, CSS y recursos multimedia, e integra formularios y componentes
-                               visuales que simulan la experiencia de un producto real.
-
-                           
+                        <h3 class="proyect-title" id="proyect-book">Libro Interactivo</h3>
+                        <p>Web interactiva que permite al usuario navegar por paginas (htmls independientes) y dintintos finales. 
+                            El sitio es completamente responsive,
+                            combina HTML, CSS, recursos multimedia e integra formularios, componentes
+                            visuales y un login basico.
                         </p>
                         <div class="item-technologies">
                             <span>Tecnologias: </span>
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/HTML/html3.svg" title="html">
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSS/css2.svg" title="css">
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Bootstrap/bootstrap3.svg" title="bootstrap">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript2.svg" title="bootstrap">
+                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript1.svg" title="javascript">
                         </div>
                     </div>
                 </div>
 
-                
             </section>
 
             <section class="education-section" id="education">
@@ -184,19 +173,16 @@
                     
                     <div class="container-courses">
                         <div class="item-container-courses">
-                            <h5>Campus Maxi Programa</h5>
+                            <h5>TodoCode Academy</h5>
                             <div class="item-education">
                                 <ul>
-                                    <li class="course-item"><h3>C# Nivel 3 [Web .Net]</h3>
-                                        <P>Febrero 2025 | En Curso</P>
+                                    <li class="course-item">
+                                        <h3 class="course-item-title">API Java Spring Boot</h3>
+                                        <p>Febrero 2025 | En Curso</p>
                                     </li>
-
-                                    <li class="course-item"><h3>Bases de Datos SQL [SQL Server]</h3>
-                                        <P>Febrero 2025 | Mayo 2025</P>                                    
-                                    </li>
-                                    
-                                    <li class="course-item"><h3>C# Nivel 2 [.Net + SQL]</h3>
-                                        <p>Febrero 2025 | Mayo 2025</p>                                    
+                                    <li class="course-item">
+                                        <h3 class="course-item-title">Java POO</h3>
+                                        <p>Mayo 2025 | En Curso</p>
                                     </li>
                                 </ul>
                             </div>
@@ -206,16 +192,31 @@
                             <h5>CTTP UNAHUR</h5>
                             <div class="item-education">
                                 <ul>
-                                    <li class="course-item"><h3>Testing Nivel 1</h3>
+                                    <li class="course-item">
+                                        <h3 class="course-item-title">Testing Nivel 1</h3>
                                         <p>Agosto 2025 | En Curso</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item-container-courses">
+                            <h5>Campus Maxi Programa</h5>
+                            <div class="item-education">
+                                <ul>
+                                    <li class="course-item">
+                                        <h3 class="course-item-title">Bases de Datos SQL [SQL Server]</h3>
+                                        <P>Febrero 2025 | Mayo 2025</P>                                    
+                                    </li>
+                                    <li class="course-item">
+                                        <h3 class="course-item-title">C# Nivel 2 [.Net + SQL]</h3>
+                                        <p>Febrero 2024 | Junio 2024</p>                                    
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         
                     </div>
-                    
-
                 </div>
             </section>
         </main>

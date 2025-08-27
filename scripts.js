@@ -13,3 +13,31 @@ navItems.forEach(item => {
         navLinks.classList.remove('active');
     });
 });
+
+//cambiar color icono
+// Email
+const emailIcon = document.getElementById("email-icon");
+emailIcon.addEventListener("mouseover", () => {
+  emailIcon.src = "./icons/email_cy.png";  
+});
+emailIcon.addEventListener("mouseout", () => {
+  emailIcon.src = "./icons/email_w.png";  
+});
+
+// LinkedIn
+const linkedinIcon = document.getElementById("linkedin-icon");
+linkedinIcon.addEventListener("mouseover", () => {
+  linkedinIcon.src = "./icons/linkedin_cy.png";
+});
+linkedinIcon.addEventListener("mouseout", () => {
+  linkedinIcon.src = "./icons/linkedin_w.png";
+});
+
+// GitHub
+const githubIcon = document.getElementById("github-icon");
+githubIcon.addEventListener("mouseover", () => {
+  githubIcon.src = "./icons/github_cy.png";
+});
+githubIcon.addEventListener("mouseout", () => {
+  githubIcon.src = "./icons/github_w.png";
+});
