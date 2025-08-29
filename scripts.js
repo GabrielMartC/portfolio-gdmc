@@ -18,7 +18,7 @@ navItems.forEach(item => {
 // Email
 const emailIcon = document.getElementById("email-icon");
 emailIcon.addEventListener("mouseover", () => {
-  emailIcon.src = "./icons/email_cy.png";  
+  emailIcon.src = "./icons/email_cy2.png";  
 });
 emailIcon.addEventListener("mouseout", () => {
   emailIcon.src = "./icons/email_w.png";  
@@ -27,7 +27,7 @@ emailIcon.addEventListener("mouseout", () => {
 // LinkedIn
 const linkedinIcon = document.getElementById("linkedin-icon");
 linkedinIcon.addEventListener("mouseover", () => {
-  linkedinIcon.src = "./icons/linkedin_cy.png";
+  linkedinIcon.src = "./icons/linkedin_cy2.png";
 });
 linkedinIcon.addEventListener("mouseout", () => {
   linkedinIcon.src = "./icons/linkedin_w.png";
@@ -36,7 +36,7 @@ linkedinIcon.addEventListener("mouseout", () => {
 // GitHub
 const githubIcon = document.getElementById("github-icon");
 githubIcon.addEventListener("mouseover", () => {
-  githubIcon.src = "./icons/github_cy.png";
+  githubIcon.src = "./icons/github_cy2.png";
 });
 githubIcon.addEventListener("mouseout", () => {
   githubIcon.src = "./icons/github_w.png";

@@ -1,4 +1,3 @@
-
 /* ================
 Reset y globales
 ================ */
@@ -43,19 +42,17 @@ body {
 
 a {
     text-decoration: none;
-    /* color: inherit; */
-    color: #06B6D4;
+    color: #0bdbb6;
 }
 
 p{
     font-size: 1rem;
-
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: #0bdbb6;
 }
-
 
 
 /* ======================
@@ -75,17 +72,13 @@ header.navbar {
     padding: 1rem 1.5rem;
 }
 
-header.navbar .logo {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
 
 header.navbar .menu-toggle {
     display: none;
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: #06B6D4;    
+    color: #0bdbb6;    
     cursor: pointer;
 }
 
@@ -111,7 +104,7 @@ header.navbar .nav-links li a:hover {
     font-family: 'Montserrat';
     background-color: rgb(12 15 20);
     border-style: solid;
-    border-color: #06B6D4;
+    border-color: #0bdbb6;
     color: #ffffff;
     border-width: thin;
     border-radius: 0.9rem;
@@ -132,10 +125,8 @@ header.navbar .nav-links li a:hover {
         right: 0;
         background-color: rgb(12 15 20);
         flex-direction: column;
-        /* gap: 1rem; */
         padding: 1rem 0;
         display: none;
-        /* por defecto oculto */
     }
 
     header.navbar .nav-links.active {
@@ -155,7 +146,6 @@ header.navbar .nav-links li a:hover {
 /* Espacio para que no tape el header */
 .container-main {
     margin-top: 60px;
-    /* ajusta según la altura de tu header */
     display: flex;
     flex-direction: column;
 }
@@ -181,9 +171,7 @@ header.navbar .nav-links li a:hover {
 }
 
 .profile-pic {
-    /* max-width: 80%; */
     width: 180px;
-    /* height: auto; */
     border-radius: 50%;
 }
 
@@ -196,7 +184,7 @@ header.navbar .nav-links li a:hover {
     font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: -0.1rem;
-    color: #06B6D4;
+    color: #0bdbb6;
 }
 
 .container-about-text p {
@@ -210,14 +198,34 @@ header.navbar .nav-links li a:hover {
     padding: 2rem 0rem;
 }
 
+#my-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 #my-contacts h3 {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     font-size: 1.1rem;
 }
 
-.container-icons-contacts {
-    display: inline-flex;
+#mailto{
+    color: white;
+}
+
+
+.container-email-icons {
+    display: flex;
     gap: 1.6rem;
+    flex-direction: column;
+}
+
+
+.container-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .icons-contacts {
@@ -231,7 +239,6 @@ header.navbar .nav-links li a:hover {
     .main-section {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-between; */
         justify-content: flex-start;
         align-items: center;
         padding: 2rem 4rem;
@@ -246,7 +253,6 @@ header.navbar .nav-links li a:hover {
     }
 
     .profile-pic {
-        /* width: 250px; */
         width: 15vw;
         border-radius: 0;
     }
@@ -259,6 +265,24 @@ header.navbar .nav-links li a:hover {
 
     #my-contacts {
         text-align: left;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .container-email-icons {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+
+        /* #icons{order: 1;}
+        #mailto{order: 2;} */
+    }
+
+    .container-icons{
+        justify-content: normal;
     }
 }
 
@@ -267,21 +291,17 @@ header.navbar .nav-links li a:hover {
     SECCIÓN “HABILIDADES”
     ====================== */
 .skills-section {
-    padding: 4.5rem 3rem 3rem;
+    padding: 4.5rem 1.8rem 3rem;
     background-color: #0D1117;
 }
 
 .skills-section h2 {
     text-align: center;
     margin-bottom: 2rem;
-    /* font-family: "Inter", sans-serif; */
-    color: #06B6D4;
-    /* font-size: 1.5rem; */
 }
 
 .container-skills {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
     gap: 1rem 1rem;
     justify-items: center;
 }
@@ -340,15 +360,13 @@ header.navbar .nav-links li a:hover {
     SECCIÓN “PROYECTOS”
     ====================== */
 .proyects-section {
-    padding: 4.5rem 3rem 3rem;
+    padding: 4.5rem 1.8rem 3rem;
     background-color: #0D1117;
 }
 
 .proyects-section h2 {
     text-align: center;
     margin-bottom: 2rem;
-
-    color: #06B6D4;
 }
 
 .container-proyects {
@@ -359,9 +377,7 @@ header.navbar .nav-links li a:hover {
 
 .item-proyects {
     background-color: #111827;
-    /* padding: 1rem; */
     padding-bottom: 1rem;
-    /* border-radius: 0.5rem; */
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -392,8 +408,6 @@ header.navbar .nav-links li a:hover {
 
 .item-proyects h3 {
     margin-bottom: 0.5rem;
-    /* font-family: "Inter", sans-serif; */
-    /* color: #ff751a; */
 }
 
 .item-proyects p {
@@ -406,7 +420,6 @@ header.navbar .nav-links li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* gap: 1rem; */
     column-gap: 0.4rem;
     row-gap: 0.3rem;
     align-items: center;
@@ -415,7 +428,6 @@ header.navbar .nav-links li a:hover {
 }
 
 .markdownsBadges{
-    /* height: 1.3vw; */
     height: 1.4rem;
 }
 
@@ -446,19 +458,9 @@ header.navbar .nav-links li a:hover {
 
 /* ajuste tablets */
 @media (min-width: 769px) {
-    /* #img-proyect-book{
-        height: 13rem;
-    } */
-
-    /* #proyect-book{
-        padding-top: 4rem;
-    } */
-
     .container-proyects {
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 }
 
 /* Ajustes para desktop */
@@ -472,14 +474,13 @@ header.navbar .nav-links li a:hover {
     SECCIÓN “EDUCACIÓN”
     ===================== */
 .education-section {
-    padding: 4.5rem 3rem 3rem;
+    padding: 4.5rem 1.8rem 3rem;
     background-color: #0D1117;
 }
 
 .education-section h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #06B6D4;
 }
 
 .container-education {
@@ -530,20 +531,12 @@ header.navbar .nav-links li a:hover {
 }
 
 .item-education-text h4 {
-    /* margin-bottom: 0.5rem;
-    font-family: "Inter", sans-serif; */
     font-size: 0.8rem;
     padding: 0rem;
 }
 
 .item-education-text h3 {
-    /* margin-bottom: 0.5rem;
-    font-family: "Inter", sans-serif; */
     font-size: 1.3rem;
-}
-
-.item-education-text p {
-    font-size: 0.9rem;
 }
 
 .container-courses{
@@ -600,7 +593,6 @@ header.navbar .nav-links li a:hover {
 }
 
 
-
 /* ==========
     FOOTER
     ========== */
@@ -626,10 +618,23 @@ header.navbar .nav-links li a:hover {
     height: auto;
 }
 
+/*  GENERAL */
+
+/* tablets */
+@media (min-width: 630px) {
+    .skills-section, .proyects-section, .education-section{
+        padding: 4.5rem 3rem 3rem;;
+    }
+}
+
+
 /* pantallas mayor a 1366px x 768px */
 @media only screen and (min-width: 1367px){
     .skills-section, .proyects-section, .education-section{
         padding-top: 5.5rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+
     }
 
     header.navbar {
@@ -646,7 +651,7 @@ header.navbar .nav-links li a:hover {
     }
 
     #my-contacts h3 {
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
         font-size: 1.4vw;
     }
     
@@ -659,7 +664,6 @@ header.navbar .nav-links li a:hover {
 
     }
 
-    
     h3, .item-education-text h3{
         font-size: 1.4vw;
     }
@@ -668,7 +672,7 @@ header.navbar .nav-links li a:hover {
         font-size: 1vw;
     }
     
-    p, .skill-item p, span, .footer p{
+    p, .skill-item p, span, .footer p, #mailto{
         font-size: 1.3vw;
     }
 
@@ -690,9 +694,6 @@ header.navbar .nav-links li a:hover {
         font-size: 1.2vw;
     }
 
-
-
-
     .icons-contacts {
         width: 2.5vw;
         height: 2.5vw;
@@ -707,22 +708,10 @@ header.navbar .nav-links li a:hover {
         gap: 2vw;
     }
 
-    .container-icons-contacts {
-        gap: 1.6vw;
+    .container-email-icons {
+        gap: 0.5vw;
     }
 
-    .container-icons-skills {
-        display: flex;
-        justify-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 5vw;
-    }
-
-    .icons-skills {
-        width: 3vw;
-    }
 
     #university .img-education {
         width: 4.5vw;
@@ -751,6 +740,4 @@ header.navbar .nav-links li a:hover {
     .item-container-courses h5{
         font-size: 0.8vw;
     }
-
-
 }
