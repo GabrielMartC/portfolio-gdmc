@@ -8,16 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:wght@100..900&family=Syne:wght@600..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="navbar">
         <button class="menu-toggle" id="menu-toggle">☰</button>
         <ul class="nav-links" id="nav-links">
+<<<<<<< HEAD
             <li><a href="#main">INICIO</a></li>
             <li><a href="#skills">TECNOLO GIAS</a></li>
             <li><a href="#proyects">PROYECTOS</a></li>
             <li><a href="#education"> FORMACIÓN</a></li>
+=======
+            <li><a href="#main">Sobre Mi</a></li>
+            <!-- <li><a href="#skills">TECNOLOGIAS</a></li> -->
+            <li><a href="#proyects">Proyectos</a></li>
+            <!-- <li><a href="#education"> FORMACIÓN</a></li> -->
+>>>>>>> 9f747b1 (cambios nuevamente)
         </ul>
         <a href="./files/CV_Gabriel_Martinez_j.pdf" download>
             <button id="cv-button">Descargar CV</button>
@@ -27,12 +35,14 @@
     <div class="container-main">
         <main>
             <section class="main-section" id="main">
-                <div class="container-profile-pic">
-                    <img class="profile-pic" src="./img/ProfilePic_color.png" alt="foto perfil">
-                </div>
+                
                 <aside class="info-main">
                     <div class="container-about-text">
-                        <h1>GABRIEL MARTINEZ</h1>
+                        <div class="container-name">
+                            <h1 class="h1-name">Gabriel</h1>
+                            <h1 class="h1-name">Martinez</h1>
+                        </div>
+                        
                         <p>
                             Estudiante de Programación, músico. 
                             Mi enfoque se centra en el desarrollo de aplicaciones web/escritorio utilizando
@@ -51,15 +61,68 @@
                                     <img id="github-icon" class="icons-contacts" src="./icons/github_w.png" alt="GitHub">
                                 </a>
                             </div>
-                            <a id="mailto" href="mailto:gabrielmsistemas@gmail.com">gabrielmsistemas@gmail.com</a>
+
+                            <div class="container-mail">
+                                <a id="mailto" href="mailto:gabrielmsistemas@gmail.com">gabrielmsistemas@gmail.com</a>
+                                <button onclick="copyEmail()" class="copy-btn" title="Copiar correo">
+                                    <img src="./icons/copy.png" alt="Copiar" class="copy-icon">
+                                </button>                                
+                            </div>
 
                         </div>
                     </div>
                 </aside>
+
+                <div class="about-me">
+                    <div class="tabs">
+                        <button class="tab active" data-target="soft">Soft Skills</button>
+                        <button class="tab" data-target="tech">Technical Skills</button>
+                        <button class="tab" data-target="edu">Educación</button>
+                        <!-- <button class="tab" data-target="exp">Experiencia</button> -->
+                    </div>
+
+                    <div class="tab-content active" id="soft">
+                        <ul>
+                            <li>Responsabilidad</li>
+                            <li>Escucha Activa</li>
+                            <li>Capacidad de adaptación</li>
+                            <li>Trabajo en equipo</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="tech">
+                        <ul>
+                            <li>C#</li>
+                            <li>.NET Framework</li>
+                            <li>SQL Server</li>
+                            <li>Git</li>
+                            <li>ASP.NET Framework</li>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Python</li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="edu">
+                        <ul>
+                            <li>Técnicatura en Programación, Universidad Nacional de Hurlingham (En curso)</li>
+                            
+                        </ul>
+                    </div>
+
+                    <!-- <div class="tab-content" id="exp">
+                        <p>Contenido de experiencia...</p>
+                    </div> -->
+
+                </div>
+
             </section>
 
 
-            <section class="skills-section" id="skills">
+            <!-- <section class="skills-section" id="skills">
                 <h2>TECNOLOGÍAS</h2>
                 <div class="container-skills">
                     <div class="skill-item">
@@ -97,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section class="proyects-section" id="proyects">
                 <h2>PROYECTOS</h2>
@@ -112,11 +175,19 @@
                             almacenados en una base de datos relacional SQL. Desarrollada con arquitectura en capas y validaciones.
                         </p>
                         <div class="item-technologies">
-                            <span>Tecnologías: </span>
+                            <!-- <span>Tecnologías: </span>
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSharp/csharp2.svg">
                             <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/dotNET/dotnet2.svg" title=".net framework 4.8">
-                            <img class="my-markBadg" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white">
+                            <img class="my-markBadg" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white"> -->
+                        
+                            <button class="item-tech">C#</button>
+                            <button class="item-tech">.NET Framework</button>
+                            <button class="item-tech">SQL Server</button>
+
+
+
                         </div>
+
                     </div>
 
                     <div class="item-proyects">
@@ -140,7 +211,7 @@
 
             </section>
 
-            <section class="education-section" id="education">
+            <!-- <section class="education-section" id="education">
                 <h2>FORMACIÓN</h2>
                 <div class="container-education">
                     <div id="university">
@@ -200,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <footer class="footer">
@@ -215,6 +286,9 @@
             </div>
         </footer>
     </div>
+
+    <!-- reemplazo alert -->
+    <div id="copy-notification" class="notification">¡Correo copiado!</div>
 
     <script src="./scripts.js"></script>
 </body>
