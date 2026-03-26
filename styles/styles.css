@@ -84,6 +84,7 @@ header.navbar {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1.5rem;
+    flex-direction: row-reverse;
 }
 
 
@@ -118,11 +119,17 @@ header.navbar .nav-links li a:hover {
     font-family: 'Montserrat';
     background-color: rgb(12 15 20);
     border-style: solid;
-    border-color: #0bdbb6;
+    border-color: #ffffff38;
     color: #ffffff;
     border-width: thin;
     border-radius: 0.9rem;
     font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#cv-button:hover{
+    border-color: #0bdbb6;
 }
 
 
@@ -241,6 +248,7 @@ header.navbar .nav-links li a:hover {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .container-mail{

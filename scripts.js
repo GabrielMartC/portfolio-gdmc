@@ -15,7 +15,6 @@ navItems.forEach(item => {
 });
 
 // //cambiar color icono
-
 // // LinkedIn
 const linkedinIcon = document.getElementById("linkedin-icon");
 linkedinIcon.addEventListener("mouseover", () => {
