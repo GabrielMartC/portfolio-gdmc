@@ -15,17 +15,8 @@
     <header class="navbar">
         <button class="menu-toggle" id="menu-toggle">☰</button>
         <ul class="nav-links" id="nav-links">
-<<<<<<< HEAD
-            <li><a href="#main">INICIO</a></li>
-            <li><a href="#skills">TECNOLO GIAS</a></li>
-            <li><a href="#proyects">PROYECTOS</a></li>
-            <li><a href="#education"> FORMACIÓN</a></li>
-=======
             <li><a href="#main">Sobre Mi</a></li>
-            <!-- <li><a href="#skills">TECNOLOGIAS</a></li> -->
             <li><a href="#proyects">Proyectos</a></li>
-            <!-- <li><a href="#education"> FORMACIÓN</a></li> -->
->>>>>>> 9f747b1 (cambios nuevamente)
         </ul>
         <a href="./files/CV_Gabriel_Martinez_j.pdf" download>
             <button id="cv-button">Descargar CV</button>
@@ -40,18 +31,17 @@
                     <div class="container-about-text">
                         <div class="container-name">
                             <h1 class="h1-name">Gabriel</h1>
-                            <h1 class="h1-name">Martinez</h1>
+                            <h1 class="h1-lastname">Martinez</h1>
                         </div>
                         
                         <p>
                             Estudiante de Programación, músico. 
                             Mi enfoque se centra en el desarrollo de aplicaciones web/escritorio utilizando
-                            tecnologías como Java, Spring Boot y MySQL. Estoy en constante aprendizaje y me entusiasma
-                            seguir explorando nuevas áreas, como el desarrollo web Backend. 
+                            tecnologías como C#, .NET y SQL Server. Estoy en constante aprendizaje y me entusiasma
+                            seguir explorando nuevas áreas, como el desarrollo web fullstack. 
                         </p>
                     </div>
                     <div id="my-contacts">
-                        <!-- <h3>Contáctame</h3> -->
                         <div class="container-email-icons">
                             <div class="container-icons" id="icons">
                                 <a href="https://www.linkedin.com/in/gabriel-martinez-56654b286" target="_blank">
@@ -65,7 +55,7 @@
                             <div class="container-mail">
                                 <a id="mailto" href="mailto:gabrielmsistemas@gmail.com">gabrielmsistemas@gmail.com</a>
                                 <button onclick="copyEmail()" class="copy-btn" title="Copiar correo">
-                                    <img src="./icons/copy.png" alt="Copiar" class="copy-icon">
+                                    <img src="./icons/copy_w.png" alt="Copiar" class="copy-icon" id="copy-email">
                                 </button>                                
                             </div>
 
@@ -78,7 +68,6 @@
                         <button class="tab active" data-target="soft">Soft Skills</button>
                         <button class="tab" data-target="tech">Technical Skills</button>
                         <button class="tab" data-target="edu">Educación</button>
-                        <!-- <button class="tab" data-target="exp">Experiencia</button> -->
                     </div>
 
                     <div class="tab-content active" id="soft">
@@ -102,7 +91,6 @@
                             <li>Css</li>
                             <li>Python</li>
 
-
                         </ul>
                     </div>
 
@@ -113,54 +101,10 @@
                         </ul>
                     </div>
 
-                    <!-- <div class="tab-content" id="exp">
-                        <p>Contenido de experiencia...</p>
-                    </div> -->
-
                 </div>
 
             </section>
 
-
-            <!-- <section class="skills-section" id="skills">
-                <h2>TECNOLOGÍAS</h2>
-                <div class="container-skills">
-                    <div class="skill-item">
-                        <h3>Lenguajes</h3>
-                        <div class="item-technologies">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java2.svg" title=".net framework 4.8">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg" title="phyton">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSharp/csharp2.svg">
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h3>Frameworks y Librerías</h3>
-                        <div class="item-technologies">
-                            <img class="my-markBadg" src="https://img.shields.io/badge/SPRING%20BOOT-sb?style=for-the-badge&logo=springboot&logoColor=gray&labelColor=9FD17E&color=9FD17E" title="spring">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Bootstrap/bootstrap3.svg" title="bootstrap">                            
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h3>Bases de Datos</h3>
-                        <div class="item-technologies">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/MySQL/mysql2.svg" title="mysql">
-                            <img class="my-markBadg" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white">
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h3>Herramientas y servicios</h3>
-                        <div class="item-technologies">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git2.svg" title="git">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Github/github2.svg" title="github">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/HTML/html3.svg" title="html">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSS/css2.svg" title="css">
-                        </div>
-                    </div>
-                </div>
-            </section> -->
 
             <section class="proyects-section" id="proyects">
                 <h2>PROYECTOS</h2>
@@ -175,17 +119,9 @@
                             almacenados en una base de datos relacional SQL. Desarrollada con arquitectura en capas y validaciones.
                         </p>
                         <div class="item-technologies">
-                            <!-- <span>Tecnologías: </span>
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSharp/csharp2.svg">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/dotNET/dotnet2.svg" title=".net framework 4.8">
-                            <img class="my-markBadg" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white"> -->
-                        
                             <button class="item-tech">C#</button>
                             <button class="item-tech">.NET Framework</button>
                             <button class="item-tech">SQL Server</button>
-
-
-
                         </div>
 
                     </div>
@@ -200,78 +136,15 @@
                             combina HTML, CSS y recursos multimedia, e integra formularios, componentes visuales y un login básico.
                         </p>
                         <div class="item-technologies">
-                            <span>Tecnologías: </span>
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/HTML/html3.svg" title="html">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSS/css2.svg" title="css">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Bootstrap/bootstrap3.svg" title="bootstrap">
-                            <img class="markdownsBadges" src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript1.svg" title="javascript">
+                            <button class="item-tech">Html</button>
+                            <button class="item-tech">Css</button>
+                            <button class="item-tech">Bootstrap</button>
+                            <button class="item-tech">Javascript</button>
                         </div>
                     </div>
                 </div>
-
             </section>
 
-            <!-- <section class="education-section" id="education">
-                <h2>FORMACIÓN</h2>
-                <div class="container-education">
-                    <div id="university">
-                        <img class="img-education" src="./icons/unahur.png" alt="Unahur">
-                        <div class="item-education-text">
-                            <h4>Universidad Nacional de Hurlingham</h4>
-                            <h3>TECNICATURA UNIVERSITARIA EN PROGRAMACIÓN</h3>
-                            <p>Inicio: Enero 2024 | En curso</p>
-                        </div>
-                    </div>
-
-                    <h4>Cursos</h4>
-                    
-                    <div class="container-courses">
-                        <div class="item-container-courses">
-                            <h5>TodoCode Academy</h5>
-                            <div class="item-education">
-                                <ul>
-                                    <li class="course-item">
-                                        <h3 class="course-item-title">API Java Spring Boot</h3>
-                                        <p>Febrero 2025 | En curso</p>
-                                    </li>
-                                    <li class="course-item">
-                                        <h3 class="course-item-title">Java POO</h3>
-                                        <p>Mayo 2025 | En curso</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="item-container-courses">
-                            <h5>CTTP UNAHUR</h5>
-                            <div class="item-education">
-                                <ul>
-                                    <li class="course-item">
-                                        <h3 class="course-item-title">Testing Nivel 1</h3>
-                                        <p>Agosto 2025 | En curso</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="item-container-courses">
-                            <h5>Campus Maxi Programa</h5>
-                            <div class="item-education">
-                                <ul>
-                                    <li class="course-item">
-                                        <h3 class="course-item-title">Bases de Datos Relacionales SQL</h3>
-                                        <P>Febrero 2025 | Mayo 2025</P>                                    
-                                    </li>
-                                    <li class="course-item">
-                                        <h3 class="course-item-title">C# Nivel 2 [.Net Framework + SQL]</h3>
-                                        <p>Febrero 2024 | Junio 2024</p>                                    
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
         </main>
 
         <footer class="footer">

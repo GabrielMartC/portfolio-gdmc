@@ -15,34 +15,36 @@ navItems.forEach(item => {
 });
 
 // //cambiar color icono
-// // Email
-// const emailIcon = document.getElementById("email-icon");
-// emailIcon.addEventListener("mouseover", () => {
-//   emailIcon.src = "./icons/email_cy2.png";  
-// });
-// emailIcon.addEventListener("mouseout", () => {
-//   emailIcon.src = "./icons/email_w.png";  
-// });
 
 // // LinkedIn
-// const linkedinIcon = document.getElementById("linkedin-icon");
-// linkedinIcon.addEventListener("mouseover", () => {
-//   linkedinIcon.src = "./icons/linkedin_cy2.png";
-// });
-// linkedinIcon.addEventListener("mouseout", () => {
-//   linkedinIcon.src = "./icons/linkedin_w.png";
-// });
+const linkedinIcon = document.getElementById("linkedin-icon");
+linkedinIcon.addEventListener("mouseover", () => {
+  linkedinIcon.src = "./icons/linkedin_cy2.png";
+});
+linkedinIcon.addEventListener("mouseout", () => {
+  linkedinIcon.src = "./icons/linkedin_w.png";
+});
 
 // // GitHub
-// const githubIcon = document.getElementById("github-icon");
-// githubIcon.addEventListener("mouseover", () => {
-//   githubIcon.src = "./icons/github_cy2.png";
-// });
-// githubIcon.addEventListener("mouseout", () => {
-//   githubIcon.src = "./icons/github_w.png";
-// });
+const githubIcon = document.getElementById("github-icon");
+githubIcon.addEventListener("mouseover", () => {
+  githubIcon.src = "./icons/github_cy2.png";
+});
+githubIcon.addEventListener("mouseout", () => {
+  githubIcon.src = "./icons/github_w.png";
+});
 
-//about me
+// // copy Email
+const emailIcon = document.getElementById("copy-email");
+emailIcon.addEventListener("mouseover", () => {
+  emailIcon.src = "./icons/copy_cy2.png";  
+});
+emailIcon.addEventListener("mouseout", () => {
+  emailIcon.src = "./icons/copy_w.png";  
+});
+
+
+//about me, cambiar seccion 
 const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".tab-content");
 
