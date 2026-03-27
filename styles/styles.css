@@ -12,32 +12,11 @@ html {
 }
   
 /* google fonts */
-.inter-g-font {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.lexend-g-font{
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .montserrat-g-font {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.syne-g-font {
-  font-family: "Syne", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
 }
 
 /* other fonts */
@@ -155,6 +134,17 @@ header.navbar .nav-links li a:hover {
         align-items: center;
     }
 }
+
+
+@media (min-width: 630px) {
+    header.navbar{
+        padding-top: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
 
 @media (min-width: 1024px) {
     header.navbar {
@@ -307,6 +297,7 @@ header.navbar .nav-links li a:hover {
   background: transparent;
   color: white;
   cursor: pointer;
+  font-family: 'Montserrat';
 }
 
 /* email icon */
@@ -340,8 +331,38 @@ header.navbar .nav-links li a:hover {
 
 /* Clase que activaremos con JavaScript */
 .notification.show {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ajuste tablets */
+@media (min-width: 630px) {
+    .main-section{
+        justify-content: flex-start;
+    }
+
+    .info-main{
+        margin-top: 15%;
+    }
+
+    .tabs {
+        flex-direction: row;
+    }
+
+    /* .tab-content ul {
+        column-count: 2;
+        column-gap: 2.5rem;
+    } */
+
+    #soft ul {
+        column-count: 2;
+        column-gap: 2.5rem;
+    }
+
+    #tech ul {
+        column-count: 2;
+        column-gap: 2.5rem;
+    }
 }
 
 /* Ajustes para desktop */
@@ -379,6 +400,11 @@ header.navbar .nav-links li a:hover {
 
     .container-icons{
         justify-content: normal;
+    }
+
+    .about-me{
+        margin-top: 0rem;
+        padding-left: 4rem;
     }
 }
 
@@ -531,7 +557,8 @@ header.navbar .nav-links li a:hover {
 /* tablets */
 @media (min-width: 630px) {
     .skills-section, .proyects-section, .education-section{
-        padding: 4.5rem 3rem 3rem;;
+        padding: 4.5rem 3rem 3rem;
+        min-height: 90vh;
     }
 }
 
